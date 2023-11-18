@@ -14,7 +14,7 @@ function suma(x, y) {
    // Retorna el resultado de su suma.
    // Tu código:
    
-   return x + y;
+   return x + y ;
 }
 
 function resta(x, y) {
@@ -28,22 +28,23 @@ function resta(x, y) {
 function divide(x, y) {
    // Retorna el resultado de su división.
    // Tu código:
+
    return x / y;
+
 }
 
 function multiplica(x, y) {
    // Retorna el resultado de su multiplicación.
    // Tu código:
-   var multiplica = x * y ;
-   return (multiplica) ;
+   return x * y ;
+   
 }
 
 function obtenerResto(x, y) {
    // Obten el resto de la división de "x" entre "y".
    // Tu código:
-   var obtenerResto = x % y ;
-   return (obtenerResto) ; 
-} 
+   return x % y ;
+}
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
