@@ -4,6 +4,6 @@ function obtenerSaludo(nombre) {
   // Ejemplo: "Martin" ---> "Hola Martin!"
   // Retorna el nuevo string. 
   // Tu código:
+  return ("Hola" + " " + nombre + "!");
 }
-
 module.exports = obtenerSaludo;
