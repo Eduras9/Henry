@@ -5,6 +5,18 @@ function esPalindromo(string) {
   // IMPORTANTE: Un palíndromo es una palabra o frase
   // que se lee igual hacia adelante que hacia atrás.
   // Tu código:
+
+  var stringInvertida = string.split('').reverse().join('')
+
+  if(string === stringInvertida){
+    return true
+  } else {
+    return false
+  }
+
 }
 
 module.exports = esPalindromo;
+
+var array = 'amar'
+console.log(esPalindromo('amar === rama'))
