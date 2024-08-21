@@ -18,3 +18,6 @@ function tienenMismaLongitud(str1, str2) {
 
 
 module.exports = tienenMismaLongitud;
+
+var array = ['hola', 'puedo']
+console.log(tienenMismaLongitud('hola', 'pued'))

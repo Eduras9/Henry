@@ -8,3 +8,6 @@ function obtenerPrimerStringLargo(array) {
 
 module.exports = obtenerPrimerStringLargo;
 
+var array = ['hola', 'hello1']
+console.log(obtenerPrimerStringLargo(array))
+
