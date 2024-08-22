@@ -3,6 +3,20 @@ function invocarMetodo(objeto, metodo) {
   // Esta propiedad contiene una función en su interior. Debes invocarla/ejecutarla.
   // NOTA: no necesitas retornar nada.
   // Tu código:
+  objeto[metodo]()
+
+  return objeto
 }
 
 module.exports = invocarMetodo;
+
+var carro = {
+  nombre: 'BMW', 
+  km: 6000, 
+  estado: 'Semi Nuevo',
+  saludar: function(){
+    console.log('Hola me llamo ' + this.nombre)
+  }
+}
+
+invocarMetodo(carro, 'saludar')
