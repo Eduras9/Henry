@@ -3,7 +3,7 @@ function invocarMetodo(objeto, metodo) {
   // Esta propiedad contiene una función en su interior. Debes invocarla/ejecutarla.
   // NOTA: no necesitas retornar nada.
   // Tu código:
-  objeto[metodo]()
+  objeto[metodo](metodo)
 
   //return objeto
 }
