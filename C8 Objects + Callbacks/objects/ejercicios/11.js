@@ -5,7 +5,7 @@ function invocarMetodo(objeto, metodo) {
   // Tu código:
   objeto[metodo]()
 
-  return objeto
+  //return objeto
 }
 
 module.exports = invocarMetodo;
