@@ -8,3 +8,7 @@ const obtenerValorPropiedad = (objeto, propiedad) => {
 };
 
 module.exports = obtenerValorPropiedad;
+
+var carro = {nombre: 'Fabio'}
+
+console.log(obtenerValorPropiedad(carro, 'nombre'))

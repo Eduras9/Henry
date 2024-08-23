@@ -3,6 +3,14 @@ function actualizarPassword(objetoUsuario, nuevaPassword) {
   // La nueva contraseña la recibes por parámetro.
   // Retornar el objeto.
   // Tu código:
+
+  objetoUsuario['password'] = nuevaPassword
+
+  return objetoUsuario
 }
 
 module.exports = actualizarPassword;
+
+var carro = {nombre: 'BMW', km: 6000, estado: 'Semi Nuevo', propiedad: 'hola'}
+
+console.log(actualizarPassword(carro, 'hola'))
