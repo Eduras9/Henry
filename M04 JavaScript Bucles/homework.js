@@ -113,10 +113,10 @@ function esDiezOCinco(num) {
    }
     
    // opcion 1:
-   //if (num === 10 || num === 5 ) {
+   // if (num === 10 || num === 5 ) {
    //   return true;
-   //} 
-   //else  false;
+   // } 
+   // else  false;
    
    //opcion 2:
    // num ===10 || num === 5 ? true : false;
@@ -128,8 +128,11 @@ function estaEnRango(num) {
    // Tu código:
 
 if (num < 50 && num > 20) {
-return true;
-} 
+      return true; 
+   }   
+else if (num !== 50 || num !== 20) {
+      return false;
+   }
    else false;
 }
 
@@ -140,9 +143,28 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
- if (num < 0) {
-  return true; num = num * -1; 
- } else false;
+
+   // switch (num) {
+   //    case num === 0:
+   //       return true;
+   //    case num < 0:
+   //       return true;
+   //    case num > 0:
+   //       return true;
+   //    case :
+   //       return true;
+   //    default:
+   //       return false;
+   // }
+
+      // return Number.isInteger(num);
+      
+   return num % 1 === 0; // Si al dividir entre 1 el resto es 0, es un entero
+   
+//    if (num >= 0 || num < 0 || num == num * -1  ) {
+//    return true;  
+//  }
+//  else if (false);
 }
 
 function fizzBuzz(num) {
@@ -175,9 +197,9 @@ function operadoresLogicos(num1, num2, num3) {
       case num3 > num2 && num3 > num1:
          return ++num3;
       case num1  == 0 && num2 == 0 && num3 == 0:
-         return "error";
+         return "Error";
       default:
-         return "false"
+         return false;
       }
 
  //  if (true) {
@@ -198,12 +220,12 @@ function esPrimo(num) {
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
 
-   if (num < 2) return false;
+   if (num < 2 ) return false;
 
    for (var i = 2; i < num; i++) {
-      if (num %i === 0); {
+      if (num %i === 0) {
          return false;
-      }   
+      }
    }
    return true;   
 } 

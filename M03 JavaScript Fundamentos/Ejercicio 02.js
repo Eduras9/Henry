@@ -5,9 +5,9 @@ function devolverString(string) {
    // Debe retornar un string.
    // Tu código:
 
-   return string;
-}
-
+      return string;
+   }
+   
 // ⛔️ "X" e "Y" son números.
 
 function suma(x, y) {
@@ -22,7 +22,6 @@ function resta(x, y) {
    // Tu código:
    
    return  x - y ;
-   
 }
 
 function divide(x, y) {
